@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BorderGuard AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #FAFAF9;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        color: #12161C;
+        -webkit-font-smoothing: antialiased;
+      }
+      * { box-sizing: border-box; }
+      @keyframes bgscan {
+        0% { top: 4%; }
+        50% { top: 94%; }
+        100% { top: 4%; }
+      }
+      button:focus-visible, input:focus-visible, select:focus-visible {
+        outline: 2px solid #4E8EDB;
+        outline-offset: 1px;
+      }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: #FAFAF9; }
+      ::-webkit-scrollbar-thumb { background: #C8CBD2; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #687282; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
